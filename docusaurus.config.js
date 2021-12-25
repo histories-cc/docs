@@ -1,33 +1,33 @@
-// @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const lightCodeTheme = require("prism-react-renderer/themes/github");
+const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'hiStories',
-  tagline: 'Dinosaurs are cool',
-  url: 'https://your-docusaurus-test-site.com',
-  baseUrl: '/',
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  title: "hiStories",
+  tagline: "Dinosaurs are cool",
+  url: "https://docs-histories.netlify.app/docs/intro",
+  baseUrl: "/",
+  onBrokenLinks: "throw",
+  onBrokenMarkdownLinks: "warn",
+  favicon: "img/favicon.ico",
+  organizationName: "HiStories-cc",
+  projectName: "HiStories",
 
   presets: [
     [
-      'classic',
+      "classic",
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
+          sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
-          editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        }, 
+          editUrl:
+            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+        },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: require.resolve("./src/css/custom.css"),
         },
       }),
     ],
@@ -37,65 +37,90 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'hiStories',
+        title: "hiStories",
         logo: {
-          alt: 'hiStories Logo',
-          src: 'img/logo.svg',
+          alt: "hiStories Logo",
+          src: "img/logo.svg",
         },
         items: [
           {
-            type: 'doc',
-            docId: 'intro',
-            position: 'left',
-            label: 'Docs',
-          }, 
+            type: "doc",
+            docId: "intro",
+            position: "left",
+            label: "Docs",
+          },
           {
-            href: 'https://github.com/facebook/docusaurus',
-            label: 'GitHub',
-            position: 'right',
+            href: "https://github.com/facebook/docusaurus",
+            label: "GitHub",
+            position: "right",
           },
         ],
       },
       footer: {
-        style: 'dark',
+        style: "dark",
         links: [
           {
-            title: 'Docs',
+            title: "HiStories",
             items: [
               {
-                label: 'Docs',
-                to: '/docs/intro',
+                label: "Home",
+                to: "https://www.histories.cc",
+              },
+              {
+                label: "Mobile app",
+                to: "#",
               },
             ],
           },
           {
-            title: 'Community',
+            title: "Source code",
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: "Documentation",
+                to: "https://docs-histories.netlify.app/docs/intro/",
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                label: "Source code",
+                to: "https://github.com/histories-cc",
               },
               {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                label: "Report a bug",
+                to: "https://github.com/hiStories-cc/hiStories/issues/new?assignees=&labels=&template=bug_report.md&title=",
+              },
+              {
+                label: "Feature request",
+                to: "https://github.com/hiStories-cc/hiStories/issues/new?assignees=&labels=&template=feature_request.md&title=",
               },
             ],
           },
           {
-            title: 'More',
+            title: "Community",
             items: [
               {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                label: "Github discussions",
+                to: "https://github.com/hiStories-cc/hiStories/discussions",
+              },
+              {
+                label: "Contact me",
+                to: "mailto:krystof.kratky2003@gmail.com?subject=HiStories",
+              },
+            ],
+          },
+          {
+            title: "Legal",
+            items: [
+              {
+                label: "Terms & conditions",
+                href: "/terms-and-conditions",
+              },
+              {
+                label: "Privacy policy",
+                href: "/privacy-policy",
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} HiStories, Kryštof Krátký`,
       },
       prism: {
         theme: lightCodeTheme,
