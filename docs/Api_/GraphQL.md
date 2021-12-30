@@ -1,8 +1,9 @@
 ---
-sidebar_position: 3
+sidebar_position: 1
+title: GraphQL
 ---
 
-# API
+# GraphQL API
 
 For API is used [GraphQL](https://graphql.org/) because it's easy to use and provides types.
 
