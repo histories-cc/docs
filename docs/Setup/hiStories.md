@@ -5,26 +5,32 @@ sidebar_position: 1
 # Setup HiStories
 
 
-- Clone repository and install dependencies
+**Clone repository and install dependencies**
 ```bash
 git clone https://github.com/hiStories-cc/hiStories
 cd hiStories
-yarn install
 ```
-- Setup environmental variables
+
+**Setup environment**
+```bash
+docker-compose up -d
+```
+
+**Setup environmental variables**
 ```bash
 cp .env.local.example .env.local
 cp nodemon.json.example nodemon.json
 ```
 And change values in `.env.local` and `nodemon.json`
 
-- Run
+**Run Next.js**
 ```bash
+yarn install
 yarn build
-yarn start
+yarn dev
 ```
 
-- Now HiStories will be available at [http://localhost:3000](http://localhost:3000)
+Now HiStories will be available at [http://localhost:3000](http://localhost:3000)
 
 # Setup with Gitpod
 

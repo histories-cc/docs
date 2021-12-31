@@ -12,7 +12,7 @@ yarn install
 yarn start
 ``` 
 
-- Now documantation will be available at [http://localhost:3000](http://localhost:3000)
+Now documantation will be available at [http://localhost:3000](http://localhost:3000)
 
 # Setup with Gitpod
 
