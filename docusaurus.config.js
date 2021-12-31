@@ -37,10 +37,10 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: "hiStories",
+        title: "",
         logo: {
           alt: "hiStories Logo",
-          src: "img/logo.svg",
+          src: "img/logo-full-light.svg",
         },
         items: [
           {
