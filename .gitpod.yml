@@ -8,7 +8,7 @@ tasks:
     command: echo "Setup done"
   - name: Dev Server
     init: gp sync-await setup
-    command: yarn dev
+    command: yarn start
 
 # Ports to expose on workspace startup
 ports: 
